@@ -1,0 +1,73 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+@use 'placeholder';
+
+
+.header {
+    padding: 50px 40px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid v.$color_white;
+
+    .nav {
+        height: 50px;
+        @include m.d-flex (start, center);
+
+        &__title {
+            height: 100%;
+            height: 35px;
+            color: v.$color_blue;
+
+            &-link {
+                // @include m.font (50px, 900, normal, v.$color_blue);
+                font-size: 25px;
+                font-weight: 400;
+                color: v.$color_blue;
+            }
+        }
+
+        &__links {
+            flex-grow: 1;
+            font-family: "DM Sans", sans-serif;
+
+            .list {
+                @include m.d-flex (start, center, nowrap,row,min(100px, 5vw),0);
+                padding: 0 min(100px, 5vw);
+
+                &__item {
+                    &-link {
+                         @include m.font (22px, 400, normal, v.$color_blue);
+                         @extend %hover-light;
+                    }
+                }
+            }
+        }
+
+        .wrapper {
+            height: 100%;
+            @include m.d-flex (center, center);
+            font-family: "DM Sans", sans-serif;
+            gap: 50px;
+
+            &__link {
+                @include m.font (22px, 400, normal, v.$color_blue);
+                @extend %hover-light;
+            }
+
+            &__btn {
+                height: 60px;
+                width: 235px;
+                border: none;
+                background-color: v.$color_blue;
+                border-radius: 5px;
+                @include m.font (18px, 400, normal, v.$color_white);
+                &:hover {
+                    cursor: pointer;
+                    box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.7);
+                    opacity: .9;
+
+                }
+            }
+        }
+    }
+}

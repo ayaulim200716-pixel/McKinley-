@@ -1,0 +1,24 @@
+{
+  "name": "clear",
+  "version": "1.0.0",
+  "description": "mckinley",
+  "homepage": "https://github.com/ayaulim200716-pixel/McKinley-#readme",
+  "bugs": {
+    "url": "https://github.com/ayaulim200716-pixel/McKinley-/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayaulim200716-pixel/McKinley-.git"
+  },
+  "license": "ISC",
+  "author": "Ayau",
+  "type": "commonjs",
+  "source": "index.html",
+  "scripts": {
+    "sass:watch": "sass --style=expanded --watch styles:dist"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.4",
+    "sass": "^1.97.3"
+  }
+}
