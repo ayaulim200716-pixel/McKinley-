@@ -1,0 +1,44 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+@use 'placeholder'; 
+
+.about {
+    padding: 150px 0 ;
+    background-color: rgb(239, 247, 247);
+    margin: 0 auto;
+    @include m.d-flex (space-between, center,nowrap,row,0,0);
+
+    &__content {
+        width: 100%;
+        margin: 0 100px ;
+
+        &-title {
+            @include m.d-flex (start, start, nowrap,column,0,0);
+            @include m.font (55px, 400, v.$color_blue);
+            max-width: 400px
+        }
+        &-desc {
+            @include m.d-flex (start, start, nowrap,column,0,0);
+            @include m.font (24px, 300, v.$color_blue);
+            margin: 30px 0;
+            max-width: 555px;
+            line-height: 2;
+            font-family: "DM Sans", serif;
+        }
+        &-btn {
+            height: 60px;
+            width: 235px;
+            border: none;
+            background-color: v.$color_blue;
+            border-radius: 5px;
+            @include m.font (18px, 300, v.$color_white);
+            &:hover {
+                cursor: pointer;
+                box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.7);
+                opacity: .9;
+            }
+        }
+    }
+
+
+}
