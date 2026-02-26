@@ -1,0 +1,19 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+@use 'placeholder';
+
+.about__cards {
+    position: relative;
+    background-color: v.$color_blue;
+    &-img {
+        width: 595px;
+        height: 760px;
+        @include m.position (absolute,1,-1,top,left,-300px,-700px);
+
+        &:hover {
+            cursor: pointer;
+            box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.7);
+            opacity: .9;
+        }
+    }
+}
