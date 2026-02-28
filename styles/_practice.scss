@@ -1,0 +1,28 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+@use 'placeholder';
+
+.practice  {
+    padding: 200px 0;
+    margin: 0 0 0 70px;
+    width: 100%;
+    height: 850px;
+    color: v.$color_blue;
+    font-family: "DM Sans", serif;
+    max-width: 1300px;
+
+    &__content {
+
+        &-title {
+            font-family: "DM Serif Text", serif;
+            @include m.font (44px, 400, v.$color_blue);
+            line-height: 2;
+            flex-shrink: 1;
+        }
+        &-desc {
+            @include m.font (24px, 300, v.$color_blue);
+            line-height: 42px;
+            max-width: 600px;
+        }
+    }
+}
