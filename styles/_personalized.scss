@@ -1,0 +1,11 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+@use 'placeholder';
+
+.personalized {
+    position: relative;
+    margin: -40px 0 0 80px;
+    background: url('../assets/second.jpg') center/cover no-repeat;
+    width: 1270px;
+    height: 680px;
+}
