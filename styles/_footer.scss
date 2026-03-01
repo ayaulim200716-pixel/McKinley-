@@ -1,0 +1,14 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+@use 'placeholder';
+
+.footer {
+    background-color: #002B41;
+    margin: 150px 0 0 0;
+    font-family: "DM Sans", serif;
+    &__wrapper {
+        padding: 20px 20px;
+        @include m.d-flex (space-between,start,nowrap,row,0,0);
+        @include m.font (14px,400,v.$color_white);
+    }
+}
