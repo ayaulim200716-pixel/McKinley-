@@ -1,0 +1,13 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+@use 'placeholder';
+
+.article {
+    padding: 0 60px;
+    width: 100%;
+    height: 620px;
+
+    &__title {
+        @include m.font (44px, 400, v.$color_blue);
+    }
+}
