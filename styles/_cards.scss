@@ -114,14 +114,17 @@
         &-day {
             @include m.font (15px, 300, v.$color_blue);
             margin: 20px 0;
+             padding: 10px 10px;
         }
         &-desc {
             @include m.font (22px, 400, v.$color_blue);
             line-height: 33px;
-            margin-bottom: 60px
+            margin-bottom: 50px;
+            padding: 10px 10px;
         }
         &-btn {
             @include m.font (19px,400, v.$color_blue);
+             padding: 10px 10px;
         }
         &:hover {
             cursor: pointer;
