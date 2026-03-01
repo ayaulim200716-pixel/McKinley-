@@ -1,0 +1,30 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+@use 'placeholder';
+
+
+.team-section {
+    position: relative;
+    .team {
+    padding: 250px 150px;
+    color: v.$color_blue;
+
+    &__content {
+        @include m.d-flex (center, center, nowrap, column, 0, 0);
+        &-title {
+            font-family: "DM Serif Text", serif;
+            @include m.font (32px, 400, v.$color_blue);
+            line-height: 50px;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        &-name {
+            @include m.font (15px, 200, v.$color_blue);
+            line-height: 35px;
+            margin-top: 20px;
+        }
+    }
+
+}
+}
